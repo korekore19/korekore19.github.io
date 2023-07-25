@@ -1,0 +1,115 @@
+@charset"utf-8";
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+line-height: 1;
+}
+ul{
+list-style: none;
+}
+a{
+text-decoration: none;
+}
+img{
+vertical-align: bottom;
+}
+/* 共通部分 */
+header{
+padding: 30px 0;
+}
+h1{
+text-align: center;
+font-family: 'Zen Antique Soft', serif;
+font-size: 45px;
+}
+.g-nav{
+width: 100%;
+height: 50px;
+background-color: #d0104c;
+margin-bottom: 80px;
+}
+.g-nav>ul/* 子セレクタ */
+{
+display: flex;
+width: 960px;
+margin: 0 auto;
+/* background-color: #f00;確認用 */
+}
+.g-nav li{
+width: 20%;
+}
+.g-nav a{
+display: block;
+line-height: 50px;/* 文字の垂直方向の位置 height: 50px;と同じ値*/
+text-align: center;
+color: #fff;
+border-right: 1px solid #fff;/* 境界線 */
+}
+.g-nav a:hover{
+background-color: #81062d;
+}
+.g-nav li:first-of-type>a/* 疑似ｸﾗｽ、沢山の中の１番目にだけ命令 */
+{
+border-left: 1px solid #fff;
+}
+main{
+width: 960px;
+margin: 0 auto 100px;
+}
+footer{
+width: 100%;
+height: 100px;
+background-color: #d0104c;
+}
+footer>p{
+text-align: center;
+color: #fff;
+line-height: 100px;/* footerのheightが100pxなので */
+}
+/* トップページ部分 */
+.main-visual{
+margin-bottom: 70px;
+}
+.main-txt{
+text-align: center;
+}
+.main-txt>h2{
+margin-bottom: 20px;
+}
+.main-txt>p{
+width: 600px;
+margin: 0 auto;
+line-height: 2;
+}
+
+/* 季節ページ */
+main.page{
+display: flex;
+}
+.page-img{
+margin-right: 20px;
+}
+.page-taxt>h2{
+margin-bottom: 30px;
+}
+.page-taxt>p{
+line-height: 1.6;
+}
+/* 個別ページ部分 */
+#spring>.g-nav,#spring>footer{
+background-color: #e16b8c;
+}
+#summer>.g-nav,#summer>footer{
+background-color: #f5e505;
+}
+#fall>.g-nav,#fall>footer{
+background-color: #e2943b;
+}
+#winter>.g-nav,#winter>footer{
+background-color: #7b90d2;
+}
